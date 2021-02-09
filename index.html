@@ -1,0 +1,171 @@
+---
+---
+<!DOCTYPE html>
+{% assign config = site.data.config %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf8"/>
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+</style>
+<div class="rectangle shape-1 expanded-height palette-2g"></div>
+<div class="rectangle shape-2 expanded-height palette-2"></div>
+  <nav id="site-navigation" class="white" aria-label="Menu">
+  <img class="" id=logo alt=logo src={{site.lgw_url}}/ipfs/{{config.qmasset}}/logo-13.svg>
+  <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+  <h2 class="" style="vertical-align: middle; margin-left: 48px;">
+  Brand</h2>
+ 
+  <input id="toggle-mobile-menu" type="checkbox" />
+  <ul class="dbug" id="main-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="">
+<div class="hero">
+<img src=https://via.placeholder.com/300/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+300x300 alt=placeholder>
+<div class="spacer50">
+<!--<span class="align-center">:hero</span>
+-->
+<p class="white card shadow">{{config.hero.content}}</p>
+</div>
+
+</div>
+<div class="cards">
+{% for i in (1..9) %}
+<div class="card shadow palette-1 padding-2 align-center">
+    <a href="#">
+    <div title="card{{forloop.index0}}.title" class="clearfix circle padding-1em palette-3">
+      <!--
+      <img class="icon block" src=https://via.placeholder.com/64/aaa/icon.png>
+      -->
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/icon.svg#svg-icon"></use>
+      </svg>
+    </div>
+    <h4 class="align-center">card{{forloop.index}}</h4>
+    </a>
+</div>
+{% endfor %}
+</div>
+</section>
+<section class="">
+<div class="align-center white">
+<p class="margin-auto shadow">
+Like Our Services? Get an&nbsp;&nbsp;<button id="action" onclick="open_signup_div(event)">Instant Quote</button>
+</p>
+</div>
+
+<div class="list">
+
+{% for i in (1..6) %}
+{% endfor %}
+
+<div class="white card shadow padding-y1 palette-1 align-center">
+    <h4 class="align-center palette-1">Address</h4>
+    <a target="_blank" href="https://maps.google.com/?q=Ch.+de+la+Chiesaz,+81024+EcublensVD+Switzerland">
+    <div class="circle palette-3 padding-1em">
+<!--
+      <img class="icon block" src=https://via.placeholder.com/64/aaa/icon.png>
+-->
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/map.svg#svg-map"></use>
+      </svg>
+    </div>
+    <p>Ch. de la Chiesaz, 8<br>1024 Ecublens<br>VD Switzerland</p></a>
+</div>
+
+<div class="white card shadow padding-y1 palette-1 align-center">
+    <h4 class="align-center palette-1">Email</h4>
+    <a href="mailto:michelc@drit.ml">
+    <div class="circle palette-3 padding-1em">
+<!--
+      <img class="icon block" src=https://via.placeholder.com/64/aaa/icon.png>
+-->
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/email.svg#svg-email"></use>
+      </svg>
+    </div>
+    <p>michelc@drit.ml</p></a>
+</div>
+
+<div class="white card shadow padding-y1 palette-1 align-center">
+    <h4 class="align-center palette-3">Phone</h4>
+    <a href="callto:+41767609400">
+    <div class="circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/phone.svg#svg-phone"></use>
+      </svg>
+    </div>
+    <p>+41 76 76 0 9400</p></a>
+</div>
+
+
+</div>
+</section>
+
+<section class="backlink palette-4">
+<footer class="align-center footer">
+<p class="">Dr. IT, your trusted partner when technology fails you ...</p>
+<div class="social horizontal">
+    <a class="div-link" href="#">
+    <div class="icon circle palette-3 padding-1em"> 
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/linkedin.svg#svg-linkedin"></use>
+      </svg>
+    </div></a>
+
+    <a class="div-link" href="#">
+    <div class="icon circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/twitter.svg#svg-twitter"></use>
+      </svg>
+    </div></a>
+
+    <a class="div-link" href="#">
+    <div class="icon circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/facebook.svg#svg-facebook"></use>
+      </svg>
+    </div></a>
+
+    <a class="div-link" href="bios.html">
+    <div class="icon circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/bio.svg#svg-bio"></use>
+      </svg>
+    </div></a>
+
+    <a class="div-link" href="#">
+    <div class="icon circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/gitlab.svg#svg-gitlab"></use>
+      </svg>
+    </div></a>
+
+    <a class="div-link" href="#">
+    <div class="icon circle palette-3 padding-1em">
+      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/git.svg#svg-git"></use>
+      </svg>
+    </div></a>
+</div>
+
+      <span>
+      <a class="link" href="https://tmpl.ml" target="_blank">
+        Website
+      </a>
+        created by <a href="http://duckduckgo.com/?q=who+is+%22doctor+IT%22+%2BMychelium+!">Dr. IT</a>
+        with
+      <a class="link" href="" target="_blank">♡</a>.
+      </span>
+</footer>
+</section>
+
+

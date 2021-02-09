@@ -1,0 +1,45 @@
+.dbug {
+ border: 2px dashed red;
+}
+
+body {
+ background-color: #414060;
+}
+
+.rectangle {
+ border: 1px dashed blue;
+}
+.palette-3 {
+	background-color: #f3ecfc;
+}
+.card > h4 {
+	color: #4f2083 !important;
+}
+.svg-link {
+	fill: currentColor;
+}
+
+#logo {
+  position: fixed;
+}
+
+#hero {
+  display: inline-block;
+  background-color: lightgreen;
+  width: 50vw;
+  height: 50vh;
+}
+
+.palette-1 {
+  background-color: white;
+	color: #4f2083 !important;
+}
+.palette-2g {
+	color: #ff00ff;
+	background-color: #4f2083;
+	background-image: linear-gradient(to right, #414060, #4f2083 );
+}
+.palette-2 {
+	color: #ff00ff;
+	background-color: #41a492;
+}
