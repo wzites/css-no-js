@@ -59,6 +59,10 @@ section {
 	background-color: white;
   color: black;
 }
+.text-grey-50 {
+  color: black;
+  opacity: 0.5;
+}
 
 .spacer50 {
   height: 50vh;

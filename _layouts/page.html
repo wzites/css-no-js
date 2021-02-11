@@ -1,0 +1,8 @@
+<!DOCTYPE html><meta charset="utf8"/>
+{% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
+
+<div class=container>
+{{content}}
+</div>
+--&nbsp;<br>
+<small>url: <a href="{{page.url | replace_first: '/', baseurl }}">{{page.url}}</a></small>

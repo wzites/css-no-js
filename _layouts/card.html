@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+<p class="text-right"><small><i>published on {{ page.date | date_to_string }}</i></small></p>
+{%- if page.header -%}
+<h2>{{page.header}} &mdash; {{page.title}}</h2>
+{%- else -%}
+<h3>{{ page.title }}</h3>
+{%- endif -%}
+{%- if page.subtitle -%}
+<h4>{{page.subtitle}}</h4>
+{%- endif -%}
+<h5>{{ page.author.name }}
+{% if page.author.bio %}<a href="bios.html#{{page.author.bio}}"><i class="far fa-user-circle"></i></a>{% endif %}
+{% if page.author.email %}<a href="mailto:{{page.author.email}}"><i class="far fa-envelope"></i></a>
+{% else %}<a href="mailto:{{site.data.bios[page.author.bio].email}}"><i class="far fa-envelope"></i></a>{% endif %}
+<a class="mx-2" href="{{site.data.bios[page.author.bio].linkedin-url}}"><i class="fab fa-linkedin"></i></a>
+</h5>
+<br>
+{%- if page.preview-img -%}
+{%- if page.preview-img contains '/ipfs/' -%}
+  {%- assign preview-img = page.preview-img | split: '/ipfs/' | last | prepend: 'https://cdn.statically.io/img/dweb.link/ipfs/' -%}
+{%- else -%}
+  {%- assign preview-img = page.preview-img -%}
+{%- endif -%}
+<img src="{{preview-img}}" alt={{page.slug}} style="max-width: 40%; float: right; padding: 0.8rem;">
+{%- endif %}
+{{content}}
+<p>--&nbsp;<br>
+<a href="{{page.previous.url | replace_first: '/',baseurl}}">&lt; {{page.previous.slug}}</a>
+| {{ page.slug }} | <a href="{{ page.next.url | replace_first: '/',baseurl }}">{{page.next.slug}} &gt;</a>
+</p>
+<br clear=all>
+

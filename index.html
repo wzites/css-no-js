@@ -1,7 +1,10 @@
 ---
+base: './'
 ---
 <!DOCTYPE html>
+<!-- {{ site.time | date_to_xmlschema }} -->
 {% assign config = site.data.config %}
+{% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf8"/>
 <link rel="stylesheet" href="css/layout.css">
@@ -12,18 +15,18 @@
 <div class="rectangle shape-1 expanded-height palette-2g"></div>
 <div class="rectangle shape-2 expanded-height palette-2"></div>
   <nav id="site-navigation" class="white" aria-label="Menu">
-  <img class="" id=logo alt=logo src={{site.lgw_url}}/ipfs/{{config.qmasset}}/logo-13.svg>
+  <img class="" id=logo alt=logo src=img/logo-13.svg>
   <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
   <h2 class="" style="vertical-align: middle; margin-left: 48px;">
-  Brand</h2>
+  Dr. I·T</h2>
  
   <input id="toggle-mobile-menu" type="checkbox" />
   <ul class="dbug" id="main-menu">
     <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Contact</a></li>
+{% assign sorted_pages = site.pages | sort: "order" %}
+{% for p in sorted_pages %}
+    <li><a href="{{p.url | relative_url | replace_first: '/', base }}">{{p.slug | capitalize | replace: '-',' '}}</a></li>
+{% endfor %}
   </ul>
 </nav>
 
@@ -33,25 +36,35 @@
 <div class="spacer50">
 <!--<span class="align-center">:hero</span>
 -->
-<p class="white card shadow">{{config.hero.content}}</p>
+<div class="zz white shadow padding-1em">
+{% assign hero = site.cards | where: "order","zz" | first %}
+<h4 class="">{{hero.content}}</h4>
+<p class="blogdate" style="float:right">{{ hero.date | date: "%d %B %Y" }}</p>
+<p class="text-grey-50">Image from
+<a href="https://www.staticsm.gq/?q=photos/technology" class="link">static℠</a>
+</p>
+</div>
 </div>
 
 </div>
 <div class="cards">
-{% for i in (1..9) %}
+{% assign sorted = site.cards | sort: "order" %}
+{% for card in sorted %}
+{% if card.status != 'hidden' %}
 <div class="card shadow palette-1 padding-2 align-center">
-    <a href="#">
-    <div title="card{{forloop.index0}}.title" class="clearfix circle padding-1em palette-3">
+    <a href="{{card.url | relative_url | replace_first: '/', baseurl}}">
+    <div title="{{forloop.index}}:{{card.title}}" class="clearfix circle padding-1em palette-3">
       <!--
       <img class="icon block" src=https://via.placeholder.com/64/aaa/icon.png>
       -->
-      <svg class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
-      <use xlink:href="img/icon.svg#svg-icon"></use>
+      <svg alt="card{{forloop.index0}}" class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/{{card.icon}}.svg#svg-{{card.icon}}"></use>
       </svg>
     </div>
-    <h4 class="align-center">card{{forloop.index}}</h4>
+    <h4 class="align-center">{{card.slug | replace: '-',' ' | uppercase }}</h4>
     </a>
 </div>
+{% endif %}
 {% endfor %}
 </div>
 </section>
