@@ -51,7 +51,7 @@ base: './'
 {% assign sorted = site.cards | sort: "order" %}
 {% for card in sorted %}
 {% if card.status != 'hidden' %}
-<div class="card shadow palette-1 padding-2 align-center">
+<div class="card shadow palette-1 padding-y2 align-center">
     <a href="{{card.url | relative_url | replace_first: '/', baseurl}}">
     <div title="{{forloop.index}}:{{card.title}}" class="clearfix circle padding-1em palette-3">
       <!--

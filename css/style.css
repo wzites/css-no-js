@@ -39,6 +39,7 @@ body {
 	font-size: 1.1rem;
 	font-weight: 600;
 	margin: 23px 0 0;
+	padding: 0;
 }
 .svg-link {
 	fill: currentColor;

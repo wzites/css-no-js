@@ -25,17 +25,21 @@ body {
   overflow: hidden;
 }
 .hero div.zz {
+  /*
 	position: absolute;
-	min-width: 30vw;
-	/* height: 320px; */
-	top: 5rem;
 	right: 3rem;
+   */
+	position: relative; float: right;
+	min-width: 30vw;
+	height: auto;
+	top: 5rem;
 	z-index: 4;
 	margin: auto;
 	margin-right: 15px;
-	max-width: calc(100% - 3rem - 15px);
-	max-height: 50vh;
-  overflow: auto;
+	max-width: calc(100% - 15px);
+	max-height: 100vh;
+  overflow-y: auto;
+  overflow-wrap: break-word;
 }
 /*
 .hero h4 {
@@ -55,7 +59,7 @@ body {
 .cards {
   display: grid;
 	min-height: 432px;
-	grid-template-columns: repeat(auto-fit, minmax(208px,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
 	/* grid-template-rows: repeat(3, auto); */
 	width: 100%;
 	height: auto;
@@ -64,7 +68,9 @@ body {
 }
 .card {
   max-height: 320px;
-  max-width: 40vw;
+  overflow-x: clip;
+  padding-left: 0;
+  padding-right: 0;
 }
 .list {
   display: grid;
@@ -142,12 +148,14 @@ body {
   background-color: #f3ecfc;
 
   display: block;
+  float: left;
   height: auto;
   opacity: 1.0;
   clear: both;
   top: 32px;
-  position: absolute;
+  position: fixed;
 /*
+  position: absolute;
   position: sticky;
 */
   z-index: 5;
@@ -155,7 +163,7 @@ body {
   */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   #site-navigation {
     display: flex;
     flex-direction: row;
