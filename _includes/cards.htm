@@ -1,0 +1,20 @@
+<div class="cards">
+{% assign sorted = site.cards | sort: "order" %}
+{% for card in sorted %}
+{% if card.status != 'hidden' %}
+<div class="card shadow palette-1 padding-y2 align-center">
+    <a href="{{card.url | relative_url | replace_first: '/', baseurl}}">
+    <div title="{{forloop.index}}:{{card.title}}" class="clearfix circle padding-1em palette-3">
+      <!--
+      <img class="icon block" src=https://via.placeholder.com/64/aaa/icon.png>
+      -->
+      <svg alt="card{{forloop.index0}}" class="svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+      <use xlink:href="img/{{card.icon}}.svg#svg-{{card.icon}}"></use>
+      </svg>
+    </div>
+    <h4 class="align-center">{{card.slug | replace: '-',' ' | uppercase }}</h4>
+    </a>
+</div>
+{% endif %}
+{% endfor %}
+</div>

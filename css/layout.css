@@ -72,6 +72,23 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+
+.signup {
+	color: grey;
+	/* padding: 0.8rem; */
+	/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),; */
+	background: url("../img/i-wyjeb.jpg");
+	background-size: auto 100%;
+	background-attachment: fixed;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	row-gap: normal;
+	column-gap: 16px;
+}
+
 .list {
   display: grid;
 	grid-template-columns: repeat(3, 1fr);

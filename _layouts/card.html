@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 <p class="text-right"><small><i>published on {{ page.date | date_to_string }}</i></small></p>
 {%- if page.header -%}
 <h2>{{page.header}} &mdash; {{page.title}}</h2>
@@ -28,8 +27,8 @@ layout: page
 {%- endif %}
 {{content}}
 <p>--&nbsp;<br>
-<a href="{{page.previous.url | replace_first: '/',baseurl}}">&lt; {{page.previous.slug}}</a>
-| {{ page.slug }} | <a href="{{ page.next.url | replace_first: '/',baseurl }}">{{page.next.slug}} &gt;</a>
+<a href="{{page.previous.url | relative_url | replace_first: '/',baseurl}}" title="{{page.previous.url}}">&lt; {{page.previous.slug}}</a>
+| {{ page.slug }} | <a href="{{ page.next.url | replace_first: '/',baseurl }}" title="{{page.next.url}}">{{page.next.slug}} &gt;</a>
 </p>
 <br clear=all>
 

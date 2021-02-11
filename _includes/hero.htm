@@ -1,0 +1,16 @@
+<div class="hero">
+<!--
+<img src=https://via.placeholder.com/300/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+300x300 alt=placeholder>
+-->
+<img src=img/hero.jpg alt="hero Dr I·T">
+<div class="spacer50">
+<div class="zz white shadow padding-1em">
+{% assign hero = site.cards | where: "order","zz" | first %}
+<h4 class="">{{hero.content}}</h4>
+<p class="blogdate" style="float:right">{{ hero.date | date: "%d %B %Y" }}</p>
+<p class="text-grey-50">Image from
+<a href="https://www.staticsm.gq/?q=photos/technology" class="link">static℠</a>
+</p>
+</div>
+</div>
+</div>

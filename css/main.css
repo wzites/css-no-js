@@ -18,16 +18,19 @@ body { margin: 0; }
 	line-height: 0;
  /* width: 80%; */
 }
+.padding-y1 {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
 .padding-y2 {
 	padding-top: 1em;
 	padding-bottom: 1.5em;
 }
+.padding-2em {
+	padding: 2em;
+}
 .padding-1em {
 	padding: 1em;
-}
-.padding-y1 {
-	padding-top: 0.5em;
-	padding-bottom: 1em;
 }
 .margin-auto {
   margin: auto;

@@ -2,16 +2,16 @@
 {% assign config = site.data.config %}{% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf8"/>
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{{baseurl}}/css/layout.css">
+<link rel="stylesheet" href="{{baseurl}}/css/main.css">
+<link rel="stylesheet" href="{{baseurl}}/css/style.css">
 <style>/* critical css */
 </style>
 <div class="rectangle shape-1 expanded-height palette-2g"></div>
 <div class="rectangle shape-2 expanded-height palette-2"></div>
-{% include nav.html %}
+{% include navig.htm %}
 
-<div class=container>
+<div class="container white padding-1em">
 {{content}}
 </div>
 --&nbsp;<br>

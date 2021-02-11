@@ -1,0 +1,15 @@
+<nav id="site-navigation" class="white" aria-label="Menu">
+  <img class="" id=logo alt=logo src=img/logo-13.svg>
+  <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+  <h2 class="" style="vertical-align: middle; margin-left: 48px;">
+  Dr. I·T</h2>
+ 
+  <input id="toggle-mobile-menu" type="checkbox" />
+  <ul class="dbug" id="main-menu">
+{% assign sorted_pages = site.pages | sort: "order" %}
+{% for p in sorted_pages %}
+    <li><a href="{{p.url | relative_url | replace_first: '/', base }}">{{p.slug | capitalize | replace: '-',' '}}</a></li>
+{% endfor %}
+    <li><a href="#">Home</a></li>
+  </ul>
+</nav>
