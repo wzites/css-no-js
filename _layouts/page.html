@@ -1,18 +1,47 @@
 <!DOCTYPE html><!-- {{ site.time | date_to_xmlschema }} --><meta charset="utf8"/>
 {% assign config = site.data.config %}{% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
+{% assign random = site.time | date: "%s%N" | modulo: site.pages.size %}
+<title>{{page.title}} &mdash; {{page.name | replace: '-',' ' | capitalize}} ~ {{site.title}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf8"/>
-<link rel="stylesheet" href="{{baseurl}}/css/layout.css">
-<link rel="stylesheet" href="{{baseurl}}/css/main.css">
-<link rel="stylesheet" href="{{baseurl}}/css/style.css">
+<meta description="{{page.content | strip_html | strip_newlines  | truncate: 78,'...'}}">
+<meta keywords="{{page.collections}}, {{page.category}}, {{page.tags}}">
+<link rel="stylesheet" href="{{baseurl}}css/layout.css">
+<link rel="stylesheet" href="{{baseurl}}css/main.css">
+<link rel="stylesheet" href="{{baseurl}}css/style.css">
 <style>/* critical css */
 </style>
 <div class="rectangle shape-1 expanded-height palette-2g"></div>
 <div class="rectangle shape-2 expanded-height palette-2"></div>
 {% include navig.htm %}
 
+<!-- base href="{{baseurl}}" -->
+<section class="padding-x1">
+
+{% include hero.htm %}
+
 <div class="container white padding-1em">
 {{content}}
-</div>
 --&nbsp;<br>
 <small>url: <a href="{{page.url | replace_first: '/', baseurl }}">{{page.url}}</a></small>
+
+</div>
+<div style="display:none">{{page | strip_html | normalize_whitespace | jsonify | truncate: 78,'...' }}</div>
+
+</section>
+
+<section class="backlink padding-x1">
+<footer class="align-center footer">
+
+<p class="">{{config.brand}}, your trusted partner when technology fails you ...</p>
+
+{% include social.htm %}
+
+<span>
+<a class="link" href="https://tmpl.ml" target="_blank"> Website </a>
+created by <a href="http://duckduckgo.com/?q=who+is+%22doctor+IT%22+%2BMychelium+!">Dr I&#183;T</a>
+with <a class="link" href="" target="_blank">♡</a>.
+</span>
+<br>seed: {{site.time | date: "%s-%N"}}; random: {{random}}
+</footer>
+</section>

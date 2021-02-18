@@ -1,5 +1,8 @@
 ---
 base: './'
+featured:
+ url: news/
+ slug: News
 ---
 <!DOCTYPE html>
 <!-- {{ site.time | date_to_xmlschema }} -->
@@ -10,6 +13,7 @@ base: './'
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 <style>
 </style>
 <div class="rectangle shape-1 expanded-height palette-2g"></div>
@@ -17,25 +21,20 @@ base: './'
 
 {% include navig.htm %}
 
-<section class="">
+<section class="padding-x1">
 
 {% include hero.htm %}
 
 {% include cards.htm %}
 
 </section>
-<section class="">
-<div class="align-center white">
-<p class="margin-auto shadow">
-Like Our Services? Get an&nbsp;&nbsp;<button id="action" onclick="open_signup_div(event)">Instant Quote</button>
-</p>
-</div>
+<section class="padding-x1">
 {% include signup.htm %}
 
 {% include contact.htm %}
 </section>
 
-<section class="backlink palette-4">
+<section class="padding-x1">
 <footer class="align-center footer">
 
 <p class="">Dr. IT, your trusted partner when technology fails you ...</p>

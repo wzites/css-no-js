@@ -18,3 +18,4 @@ sta_url: https://cdn.statically.io/img
 
 exclude:
  - "*~*"
+ - "*.sh"

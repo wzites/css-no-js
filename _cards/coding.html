@@ -1,0 +1,45 @@
+---
+cardname: "codes &amp; apps"
+title: "Live coding and apps dev."
+desc: "we code live our application 3 times a week, Monday,Wednesday,Friday at 4pm to 8pm, join us!"
+slug: coding-n-apps
+icon: code
+order: '06'
+
+teaser: images/i-teaser.jpg
+preview: images/i-preview.jpg
+image: images/i-illustration.jpg
+base: ../../
+layout: page
+---
+{%- assign name = page.name | replace: page.ext, '' -%}
+{%- assign baseurl = '/' | relative_url | replace_first: '/', page.base -%}
+<style>
+img { max-width: 30%; }
+</style>
+<h2>{{page.name | default: page.slug | replace: '-',' ' | capitalize }}</h2>
+<pre><code>
+config: {{config}}
+collection: {{page.collection}}
+categories: {{page.categories}}
+teaser: {{page.teaser}}
+page.base: {{page.base}}
+baseurl: {{baseurl}}
+path: {{page.path}}
+relative_path: {{page.relative_path}}
+url: {{page.url}}
+page.id: {{page.id}}
+date: {{page.date}}
+tags: {{page.tags}}
+</code></pre>
+
+teaser: <img src="{{baseurl}}{{page.teaser}}">
+<br>preview: <img src="{{baseurl}}{{page.preview}}">
+<br>image: <img src="{{baseurl}}{{page.image}}">
+
+<p>
+<code>
+{{page | jsonify | replace: '<','&lt;' | replace: '\n',"\n" }}
+</code>
+
+

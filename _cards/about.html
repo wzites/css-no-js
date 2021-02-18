@@ -1,0 +1,47 @@
+---
+cardname: about
+title: "About Dr. I·T"
+desc: "Who is Michel G. Combes (aka Dr. I·T)"
+slug: about-dr-i.t
+icon: about
+order: '09'
+
+teaser: images/i-teaser.jpg
+preview: images/i-preview.jpg
+image: images/i-illustration.jpg
+base: ../../
+layout: page
+---
+{%- assign name = page.name | replace: page.ext, '' -%}
+{%- assign baseurl = '/' | relative_url | replace_first: '/', page.base -%}
+<style>
+img { max-width: 30%; }
+</style>
+
+
+My Resume : <https://michel.resumesm.gq/>
+
+<pre><code>
+config: {{config}}
+collection: {{page.collection}}
+categories: {{page.categories}}
+teaser: {{page.teaser}}
+page.base: {{page.base}}
+baseurl: {{baseurl}}
+path: {{page.path}}
+relative_path: {{page.relative_path}}
+url: {{page.url}}
+page.id: {{page.id}}
+date: {{page.date}}
+tags: {{page.tags}}
+</code></pre>
+
+
+- Dr IT can take care of your offsite encrypted at rest backup
+
+teaser: <img src="{{baseurl}}{{page.teaser}}">
+<br>preview: <img src="{{baseurl}}{{page.preview}}">
+<br>image: <img src="{{baseurl}}{{page.image}}">
+
+<p>
+

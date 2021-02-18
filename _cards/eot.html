@@ -1,0 +1,47 @@
+---
+cardname: "Eco-Organic Tech."
+title: Eco Organic Technology
+desc: "We build eco organic systems..."
+slug: eco-organic-technology
+icon: eo
+order: '04'
+
+teaser: images/i-teaser.jpg
+preview: images/i-preview.jpg
+image: images/i-illustration.jpg
+base: ../../
+layout: page
+---
+{%- assign name = page.name | replace: page.ext, '' -%}
+{%- assign baseurl = '/' | relative_url | replace_first: '/', page.base -%}
+<style>
+img { max-width: 30%; }
+</style>
+<code>
+config: {{site.data.config | truncate: 1024,'...'}}
+<pre>
+collection: {{page.collection}}
+categories: {{page.categories}}
+teaser: {{page.teaser}}
+preview: {{page.preview}}
+image: {{page.image}}
+page.base: {{page.base}}
+page.hero: {{page.hero}}
+baseurl: {{baseurl}}
+path: {{page.path}}
+relative_path: {{page.relative_path}}
+url: {{page.url}}
+page.id: {{page.id}}
+date: {{page.date}}
+tags: {{page.tags}}
+</pre>
+</code>
+
+<p>
+{% assign p = [] %}
+{% assign p.content = 'bla' %}
+<code>
+{{ p['content'] | jsonify | replace: '<','&lt;' | replace: '\\n',"\n" | truncate: 1024 }}
+</code>
+
+

@@ -4,6 +4,9 @@
 body {
  height: 100%;
 }
+.container {
+  opacity: 0.94;
+}
 .shape-1 {
 	position: absolute; /* !important; */
   position: fixed;
@@ -21,8 +24,12 @@ body {
   z-index: -2;
 }
 .hero {
-  /* height: 80vh; */
+ /* height: 80vh;
   overflow: hidden;
+ */
+}
+.spacer50 {
+	margin-bottom: 1.6rem;
 }
 .hero div.zz {
   /*
@@ -33,9 +40,12 @@ body {
 	min-width: 30vw;
 	height: auto;
 	top: 5rem;
+	margin-bottom: 5rem;
 	z-index: 4;
+  /*
 	margin: auto;
-	margin-right: 15px;
+  */
+	margin-right: 20px;
 	max-width: calc(100% - 15px);
 	max-height: 100vh;
   overflow-y: auto;
@@ -48,13 +58,22 @@ body {
 	font-size: 2.25rem;
 }
 */
-.hero > img {
+.hero > i {
+  float: right;
+  text-align: right;
+  position: absolute;
+  /*
   position: fixed;
+	background: url("../img/hero.jpg");
+  */
   right: 6rem;
 	width: 70vw;
 	height: 575px;
 	margin: 60px 30px 0 auto;
-  z-index: -1
+	background: url("https://via.placeholder.com/1080/566/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+1080x566");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+  z-index: -1;
 }
 .cards {
   display: grid;
@@ -82,11 +101,29 @@ body {
 	background-attachment: fixed;
 }
 
+#quote label {
+  cursor: pointer;
+}
+#quote > input:not(:checked) + div.signup {
+ display: none;
+}
+#quote > input:checked + div.signup {
+ display: block;
+}
+
 form {
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 10em 1fr;
 	row-gap: normal;
 	column-gap: 16px;
+}
+form > label {
+	text-align: right;
+	grid-column: 1 / 2;
+}
+form > input,
+form > button {
+	grid-column: 2 / 3;
 }
 
 .list {
@@ -98,7 +135,14 @@ form {
 	margin: 91px auto 30px 0;
 }
 .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
+  justify-content: center;
+}
+.social > a > div {
+ display: inline-block;
 }
 
 #site-navigation {
@@ -152,9 +196,6 @@ form {
   user-select: none;
 }
 
-#site-navigation > input {
-  display: none;
-}
 #site-navigation > input:not(:checked) + #main-menu {
   /* top: 6px; */
   position: relative;

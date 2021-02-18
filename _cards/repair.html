@@ -1,0 +1,44 @@
+---
+cardname: repair
+title: "Repair your equipment w/ Dr. IT"
+desc: "We repair all tech !"
+slug: repair
+icon: repair
+order: '02'
+
+teaser: images/i-teaser.jpg
+preview: images/i-preview.jpg
+image: images/i-illustration.jpg
+base: ../../
+layout: page
+---
+{%- assign name = page.name | replace: page.ext, '' -%}
+{%- assign baseurl = '/' | relative_url | replace_first: '/', page.base -%}
+<style>
+img { max-width: 30%; }
+</style>
+<pre><code>
+config: {{config}}
+collection: {{page.collection}}
+categories: {{page.categories}}
+teaser: {{page.teaser}}
+page.base: {{page.base}}
+baseurl: {{baseurl}}
+path: {{page.path}}
+relative_path: {{page.relative_path}}
+url: {{page.url}}
+page.id: {{page.id}}
+date: {{page.date}}
+tags: {{page.tags}}
+</code></pre>
+
+teaser: <img src="{{baseurl}}{{page.teaser}}">
+<br>preview: <img src="{{baseurl}}{{page.preview}}">
+<br>image: <img src="{{baseurl}}{{page.image}}">
+
+<p>
+<code>
+{{page | jsonify | replace: '<','&lt;' | replace: '\n',"\n" }}
+</code>
+
+

@@ -5,4 +5,11 @@ colors:
  primary: "4f2083"
  secondary: "41a492"
  
+brand: "Dr I·T"
+tagline: 'Your technology partner'
+
+heroimg: img/i-hero.jpg
+heroimg: https://via.placeholder.com/300/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+300x300 alt=placeholder
+
+
 

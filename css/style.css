@@ -11,6 +11,17 @@
 
 body {
  background-color: #414060;
+ font-family: Verdana, Arial, Helvetica, ui-sans-serif;
+}
+/* read also [1](https://spigotdesign.com/smooth-scroll-offset-anchor-links-with-css/#smooth-scroll) */
+html {
+  scroll-behavior: smooth;
+}
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
 }
 
 .palette-3 {
@@ -41,12 +52,14 @@ body {
 	margin: 23px 0 0;
 	padding: 0;
 }
+.svg-inline,
 .svg-link {
 	fill: currentColor;
 }
 
 #logo {
-  position: fixed;
+position: fixed;
+top:0;
 }
 
 #hero {

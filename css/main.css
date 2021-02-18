@@ -1,10 +1,17 @@
+---
+---
+{%- assign config = site.data.config -%}
 *, ::before {
 	box-sizing: border-box;
 }
 body { margin: 0; }
 
+.text-center,
 .align-center {
 	text-align: center;
+}
+.text-right {
+	text-align: right !important;
 }
 .circle {
   border: 1px solid black;
@@ -17,6 +24,10 @@ body { margin: 0; }
 	display: block;
 	line-height: 0;
  /* width: 80%; */
+}
+.padding-x1 {
+ padding-left: 1rem;
+ padding-right: 1rem;
 }
 .padding-y1 {
 	padding-top: 0.5em;
@@ -32,12 +43,15 @@ body { margin: 0; }
 .padding-1em {
 	padding: 1em;
 }
+.padding-7p {
+	padding: 7%;
+}
 .margin-auto {
   margin: auto;
 }
-section {
- padding-left: 1rem;
- padding-right: 1rem;
+.mbr-20 {
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .expanded-height {
@@ -51,17 +65,31 @@ section {
 .inline-block {
   display: inline-block;
 }
+.block {
+  display: block;
+}
+.float-l {
+ float: left;
+}
+.float-r {
+ float: right;
+}
 
 .full {
   max-width: 100%;
 }
 .shadow {
  box-shadow: 5px 5px 15px 2px rgba(4,3,5,0.9);
+ margin-right: 15px;
+ margin-bottom: 15px;
 }
 
 .white {
 	background-color: white;
   color: black;
+}
+.text-small {
+ font-size: 0.7em;
 }
 .text-grey-50 {
   color: black;
@@ -77,4 +105,14 @@ section {
 }
 .backlink a, .backlink p {
 	display: inline-block;
+}
+
+input.toggle {
+ display: none;
+}
+span.button {
+ padding: 0.2em;
+ border: 1px solid #{{config.colors.secondary}};
+ border-radius: 0.5rem;
+
 }

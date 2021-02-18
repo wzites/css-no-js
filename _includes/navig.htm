@@ -1,15 +1,42 @@
 <nav id="site-navigation" class="white" aria-label="Menu">
-  <img class="" id=logo alt=logo src=img/logo-13.svg>
-  <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+  <a href="{{baseurl}}"><img id=logo alt=logo src="{{baseurl}}img/logo-13.svg">
   <h2 class="" style="vertical-align: middle; margin-left: 48px;">
-  Dr. I·T</h2>
+  Dr. I·T</h2></a>
+  <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
  
-  <input id="toggle-mobile-menu" type="checkbox" />
+  <input id="toggle-mobile-menu" class=toggle type="checkbox" />
+{% assign pattern = "p.slug contains page.featured" | default: "p.slug contains 'sites'" %}
+{% assign featured = site.documents | where_exp: "p",pattern | first %}
+{% assign sorted_pages = site.pages | where_exp: "p","p.order" | sort: "order" %}
   <ul class="dbug" id="main-menu">
-{% assign sorted_pages = site.pages | sort: "order" %}
 {% for p in sorted_pages %}
-    <li><a href="{{p.url | relative_url | replace_first: '/', base }}">{{p.slug | capitalize | replace: '-',' '}}</a></li>
+   {% if forloop.index == 4 and page.collection == 'posts' %} 
+      {% if page.previous == nil %}
+        <li><a href="{{p.url | relative_url | replace_first: '/', baseurl }}" title="{{p.slug | capitalize | replace: '-',' '}}">Top</a></li>
+      {% else %}
+        <li><a href="{{page.previous.url | relative_url | replace_first: '/', baseurl }}" title="{{page.previous.slug | capitalize | default: 'Previous' | replace: '-',' '}}">Previous</a></li>
+      {% endif %}
+      {% if page.next == nil %}
+        <li><a href="{{p.url | relative_url | replace_first: '/', baseurl }}" title="Top: {{p.title}}">{{p.slug | capitalize | replace: '-',' '}}</a></li>
+      {% else %}
+        <li><a href="{{page.next.url | relative_url | replace_first: '/', baseurl }}" title="{{page.next.slug | capitalize | default: 'Next' | replace: '-',' '}}">Next</a></li>
+      {% endif %}
+   {% else %}
+     {% if page.slug == p.slug %}
+      {% if featured.url  %}
+        <li><a href="{{featured.url | relative_url | replace_first: '/', baseurl }}" title="featured">{{featured.slug | capitalize | default: 'Featured' | replace: '-',' '}}</a></li>
+      {% else %}
+       <li>{{p.slug | capitalize | replace: '-',' '}}</li>
+      {% endif %}
+     {% else %}
+       <li><a href="{{p.url | relative_url | replace_first: '/', baseurl }}" title="{{p.title}}">{{p.slug | capitalize | replace: '-',' '}}</a></li>
+     {% endif %}
+   {% endif %}
 {% endfor %}
-    <li><a href="#">Home</a></li>
+    <li><a href="{{baseurl}}#">
+    <svg alt="home" class="svg-inline" style="height:1.2em;" preserveAspectRatio="xMidYMin slice" viewBox="0 0 32 32">
+    <use xlink:href="{{baseurl}}img/home.svg#svg-home"></use>
+    </svg>
+    </a></li>
   </ul>
 </nav>

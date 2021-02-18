@@ -1,0 +1,119 @@
+---
+cardname: web-sites
+title: Your website from Dr I·T
+tagline: we build website
+desc: "We offer you an eco-organic site and propel your systainable business"
+slug: web-sites
+icon: website
+order: '07'
+teaser: images/i-teaser.jpg
+preview: images/i-preview.jpg
+image: images/i-illustration.jpg
+base: ../../
+layout: page
+excerpt: |-
+  We build websites for your business and startup...
+
+  All our websites are
+
+   * hand-made
+   * static, relocable and hostless
+   * in pure HTML5 + CSS3
+   * and optionally vanila javascript
+   * no GAFAM dependencies
+
+---
+{%- assign name = page.name | replace: page.ext, '' -%}
+{%- assign baseurl = '/' | relative_url | replace_first: '/', page.base -%}
+<style>img { max-width: 30%; }</style>
+{%- capture md -%}
+We build websites for your business and startup...
+
+All our websites are
+
+ * hand-made
+ * static, relocable and hostless
+ * in pure HTML5 + CSS3
+ * and optionally vanila javascript
+ * no GAFAM dependencies
+
+
+### some of our websites :
+
+1. <https://michel.resumesm.gq/>
+1. <https://www.nutrau.cf>
+1. <https://www.drit.ml/>
+1. <https://www.gc-bank.org/>
+{%comment%}
+ - <https://www.hololedger.ml/>
+ - <http://local.nodesm.tk/>
+ - <https://voter.gq/>
+ - <https://xn--evolution-fna.gq/>
+ - <https://www.cconcepted.gq/>
+ - <https://www.acmetm.gq/>
+
+ - <https://nutrium.ml/>
+ - <https://www.bitwork.ml/>
+ - <https://www.xn--one--ou3b.tk/>
+ - <https://k1.netlify.app/>
+ - <https://uns.netlify.app/>
+ - <https://xn--e18h.ml/>
+ - <https://www.chaintm.tk/>
+
+
+ - <https://gallant-mclean-7125d3.netlify.app/>
+ - <https://nervous-boyd-0ddbdc.netlify.app/>
+ - <https://www.dworld.gq/>
+ - <https://hgq.netlify.app/>
+ - <https://good-planet-ac936.netlify.app/>
+ - <https://dreamy-jennings-70ad0f.netlify.app/>
+ - <https://atsm.netlify.app/>
+ - <https://gossipsm.netlify.app/>
+
+ - <https://freenom.netlify.app/>
+ - <https://pinsm.netlify.app/>
+ - <https://primesm.netlify.app/>
+ - <https://last-frontier.netlify.app/>
+ - <https://ledgers.netlify.app/>
+ - <https://webrings.netlify.app/>
+ - <https://gc-bank.netlify.app/>
+ - <https://oooba.netlify.app/>
+
+ - <https://abundance.netlify.app/>
+ - <https://permlink.netlify.app/>
+ - <https://confident-goldstine-61efe3.netlify.app/>
+ - <https://flamboyant-shannon-2522a4.netlify.app/>
+
+ - <https://mini.chaintm.tk/>
+{%-endcomment-%}
+ 6. <https://www.holosphere.ml/>
+ 7. <https://drmik.netlify.app/>
+ 8. <https://elastic-euclid-def3e8.netlify.app/>
+ 9. <https://www.ipfstube.tk/>
+ 0. <https://spottm.netlify.app/>
+ 1. <https://www.kintm.gq/>
+ 2. <https://www.blockringtm.ml/>
+
+{%- endcapture -%}
+{{ md | markdownify }}
+
+<h3>Other examples</h3>
+<ul>
+{% assign random = site.time | date: "%s%N" | modulo: site.data.websites.others.size %}
+<li><a href={{site.data.websites.others[random]}}>{{site.data.websites.others[random]| replace: 'https://',''}}</a> (featured)
+
+{% assign top-sites = site.data.websites.tops %}
+{% assign other-sites = site.data.websites.others | sample: 5 %}
+{% assign selected-urls = top-sites | concat: other-sites %}
+{% for site-url in selected-urls %}
+<li>{{site-url}}
+{% endfor %}
+<li><a href=all-sites.html>...</a>
+</ul>
+{{ top-sites | inspect }}
+
+<!--
+{{page | jsonify | replace: '<','&lt;' | replace: '\\n',"\n" | truncate: 1024 }}
+-->
+
+

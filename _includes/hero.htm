@@ -1,15 +1,40 @@
 <div class="hero">
 <!--
-<img src=https://via.placeholder.com/300/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+300x300 alt=placeholder>
+hero: {{page.hero}}
+preview-img: {{page.preview-img}}
+teaser-img: {{page.teaser-img}}
+walink: https://wa.link/9zu7jm
+waurl: https://wa.me/+41767609400
+waapi: https://api.whatsapp.com/send?phone=41767609400&text=Hi%20Dr%20I%C2%B7T%2C%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20can%20I%20call%20you%20%F0%9F%93%9E%2C%20can%20you%20fix%20my%20%F0%9F%92%BB%20today%20%3F%20%F0%9F%95%97
+messenger: https://www.messenger.com/groupcall/LINK:ptjgmsehjapu/?link_hash=ptjgmsehjapu
+room: https://msngr.com/ptjgmsehjapu
+scheduled: https://msngr.com/tbecdzqyoudu?funnel_session_id=_90193158-f684-4c37-8620-a74ecc2ef982
 -->
-<img src=img/hero.jpg alt="hero Dr I·T">
+{% if page.hero %}
+{% assign hero = page.hero %}
+{% else %}
+{% assign hero = site.cards | where: "order","zz" | first %}
+{% endif %}
+{% assign hero-img = baseurl | append: 'img/hero.jpg'  %}
+<i id="image" data-src="{{baseurl}}img/hero.jpg" style="background-image: url({{ hero-img }}); opacity: 0.8;">Dr I·T</i>
 <div class="spacer50">
 <div class="zz white shadow padding-1em">
-{% assign hero = site.cards | where: "order","zz" | first %}
-<h4 class="">{{hero.content}}</h4>
-<p class="blogdate" style="float:right">{{ hero.date | date: "%d %B %Y" }}</p>
-<p class="text-grey-50">Image from
+<h4 class="">{{hero.content|markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
+
+<span style="float:right; text-align: right;">
+telegram: <a href="http://t.me/doctorIT">@doctorIT</a>
+<a href="https://t.me/joinchat/ItH3N95i6PpkqKoP"><img src="{{baseurl}}img/paper-plane.svg" style="height:32px; display: inline; vertical-align: middle;"></a>
+<br>
+video room: <a href="https://msngr.com/ptjgmsehjapu">
+<img src="{{baseurl}}img/fa-video-plus.svg" style="height:32px;vertical-align: middle;"></a></span>
+
+TEL: <a href="call:+41767609400">{{page.phone | default: "+41 76 76 0 9400"}}</a>
+<a href="https://wa.me/{{page.phone | default: 41767609400}}">
+<img src="{{baseurl}}img/whatsapp.svg" style="height:38px;"></a>
+
+<p class="text-small text-grey-50">Image from
 <a href="https://www.staticsm.gq/?q=photos/technology" class="link">static℠</a>
+<p class="blogdate" style="float:right">{{ hero.date | default: page.date | date: "%d %B %Y" }}</p>
 </p>
 </div>
 </div>
