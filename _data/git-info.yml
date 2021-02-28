@@ -1,0 +1,7 @@
+--- # git-commit-data
+commit: "e5c9e5a86e51dd191856d4237cec783d8a58f374"
+author: "Clinton E. Wilsen <cwilsen@keysm.ml>"
+date: "Thu Feb 18 11:33:26 2021 +0100"
+message: "2nd draft for Dr I·T"
+git_repo_url: https://github.com/wzites/css-nojs
+origin_url: git@gitea.localhost:DrIT/css-nojs.git

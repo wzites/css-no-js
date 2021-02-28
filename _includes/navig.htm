@@ -1,7 +1,7 @@
 <nav id="site-navigation" class="white" aria-label="Menu">
   <a href="{{baseurl}}"><img id=logo alt=logo src="{{baseurl}}img/logo-13.svg">
   <h2 class="" style="vertical-align: middle; margin-left: 48px;">
-  Dr. I·T</h2></a>
+  Dr I·T</h2></a>
   <label class="" id=menu for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
  
   <input id="toggle-mobile-menu" class=toggle type="checkbox" />
@@ -24,7 +24,7 @@
    {% else %}
      {% if page.slug == p.slug %}
       {% if featured.url  %}
-        <li><a href="{{featured.url | relative_url | replace_first: '/', baseurl }}" title="featured">{{featured.slug | capitalize | default: 'Featured' | replace: '-',' '}}</a></li>
+        <li><a href="{{featured.url | relative_url | replace_first: '/', baseurl }}" title="featured">{{featured.slug | default: page.featured | capitalize | default: 'Featured' | replace: '-',' '}}</a></li>
       {% else %}
        <li>{{p.slug | capitalize | replace: '-',' '}}</li>
       {% endif %}

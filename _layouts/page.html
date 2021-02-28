@@ -1,11 +1,13 @@
-<!DOCTYPE html><!-- {{ site.time | date_to_xmlschema }} --><meta charset="utf8"/>
-{% assign config = site.data.config %}{% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
+<!DOCTYPE html><!-- {{ site.time | date_to_xmlschema }} {{page.path}} --><meta charset="utf8"/>
 {% assign random = site.time | date: "%s%N" | modulo: site.pages.size %}
-<title>{{page.title}} &mdash; {{page.name | replace: '-',' ' | capitalize}} ~ {{site.title}}</title>
+{%- assign author_name = page.author.name | default: site.author-name | default: site.commiter-name | default: site.user-name -%}
+<script><!CDATA[[ {{page.content | strip_html | normalize_whitespace | strip_newlines }} ]]></script>
+<title>🌱 {{page.title | default: page.slug | replace: '-',' ' | capitalize}} | {{page.content | strip_newlines | strip_html | truncate: 76,'...'}} ~ {{site.title}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf8"/>
-<meta description="{{page.content | strip_html | strip_newlines  | truncate: 78,'...'}}">
-<meta keywords="{{page.collections}}, {{page.category}}, {{page.tags}}">
+<meta description="{{page.content | strip_html | strip_newlines | truncate: 78,'...' | append: ' by ' | append: author_name}}">
+<meta keywords="{{page.collections}}, {{page.category}}, {{page.tags}}, {{author_name}}">
+{%- include base.liquid -%}
 <link rel="stylesheet" href="{{baseurl}}css/layout.css">
 <link rel="stylesheet" href="{{baseurl}}css/main.css">
 <link rel="stylesheet" href="{{baseurl}}css/style.css">
@@ -23,10 +25,8 @@
 <div class="container white padding-1em">
 {{content}}
 --&nbsp;<br>
-<small>url: <a href="{{page.url | replace_first: '/', baseurl }}">{{page.url}}</a></small>
+<small>posted on {{ page.date | date_to_xmlschema }} by {{ author_name }} at url: <a href="{{page.url | replace_first: '/', baseurl }}">{{page.url}}</a></small>
 
-</div>
-<div style="display:none">{{page | strip_html | normalize_whitespace | jsonify | truncate: 78,'...' }}</div>
 
 </section>
 
@@ -42,6 +42,6 @@
 created by <a href="http://duckduckgo.com/?q=who+is+%22doctor+IT%22+%2BMychelium+!">Dr I&#183;T</a>
 with <a class="link" href="" target="_blank">♡</a>.
 </span>
-<br>seed: {{site.time | date: "%s-%N"}}; random: {{random}}
+<br><p class="mt-1em">seed: {{site.time | date: "%s-%N"}}; random: {{random}} 🪢</p>
 </footer>
 </section>

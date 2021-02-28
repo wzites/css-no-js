@@ -1,5 +1,6 @@
 ---
 ---
+{% comment %}
 {% if jekyll.environment != 'production' %}
 .dbug {
  border: 2px dashed red;
@@ -8,6 +9,7 @@
  border: 1px dashed blue;
 }
 {% endif %}
+{% endcomment %}
 
 body {
  background-color: #414060;
@@ -22,6 +24,11 @@ html {
     display: block;
     height: 100px;
     margin: -100px 0 0;
+}
+
+.container {
+ max-width: 720px;
+ margin: auto;
 }
 
 .palette-3 {
@@ -58,8 +65,9 @@ html {
 }
 
 #logo {
-position: fixed;
-top:0;
+	position: fixed;
+	top: 0;
+	height: 42px;
 }
 
 #hero {

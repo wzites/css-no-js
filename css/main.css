@@ -49,6 +49,9 @@ body { margin: 0; }
 .margin-auto {
   margin: auto;
 }
+.mt-1em {
+  margin-top: 1rem;
+}
 .mbr-20 {
   margin-bottom: 20px;
   margin-right: 20px;

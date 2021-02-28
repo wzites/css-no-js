@@ -11,15 +11,16 @@ room: https://msngr.com/ptjgmsehjapu
 scheduled: https://msngr.com/tbecdzqyoudu?funnel_session_id=_90193158-f684-4c37-8620-a74ecc2ef982
 -->
 {% if page.hero %}
-{% assign hero = page.hero %}
+  {% assign hero = page.hero %}
 {% else %}
-{% assign hero = site.cards | where: "order","zz" | first %}
+  {% assign hero = site.cards | where: "order","zz" | first %}
+  {% if site.ads %}{% assign ad = site.ads | where_exp: 'page','page.status != "hidden"' | sample: 5 | first %}{% endif %}
 {% endif %}
 {% assign hero-img = baseurl | append: 'img/hero.jpg'  %}
 <i id="image" data-src="{{baseurl}}img/hero.jpg" style="background-image: url({{ hero-img }}); opacity: 0.8;">Dr I·T</i>
 <div class="spacer50">
 <div class="zz white shadow padding-1em">
-<h4 class="">{{hero.content|markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
+<h4 class="">{{ad.content | default: hero.content | markdownify | replace: '<p>','' | replace: '</p>','' }}</h4>
 
 <span style="float:right; text-align: right;">
 telegram: <a href="http://t.me/doctorIT">@doctorIT</a>

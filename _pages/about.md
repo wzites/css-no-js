@@ -13,15 +13,24 @@ link: https://api.whatsapp.com/send?phone=41767609400&text=hi%20Dr%20IT%20%F0%9F
 ---
 # About Dr. I&#183;T ({{page.slug}})
 
-We do install and repair of all computer equipments and misc.
+We do [install and repair][4] of all computer equipment and misc.
+As we believe in the [**n Rs**][1] : _Rethink, Refuse, Reduce, Repurpose, [Repair][3], Reuse, Recycle_;
+we will also happily fix any other household items.
+
+{% assign len = page.base | size | minus: 1 %}{% assign base-no-slash = page.base | slice: 0, len %}
 
 
-<pre>
+[1]: https://google.com/search?q=seven+R's+Reduce,+Repair,+Reuse
+[2]: https://designforsustainability.medium.com/a-2061-timeline-restoring-the-earth-85cd825fb694
+[3]: {{base-no-slash}}{% post_url 2021-02-25-7Rs %}
+[4]: {{base-no-slash}}/cards/repair/
+
+{%comment%}
+<pre style="display:none">
 page.name: {{page.name}}
 page.ext: {{page.ext}}
 page.path: {{page.path}}
 page.slug: {{page.slug}}
 </pre>
+{%endcomment%}
 
-
-<pre>{{page | strip_html | strip_newlines | jsonify | truncate: 78,'...' }}</pre>

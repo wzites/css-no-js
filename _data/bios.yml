@@ -1,0 +1,409 @@
+# team members ...
+michel:
+ order: '01'
+ name: Dr. Michel G. Combes  
+ phone: "+41767609400"
+ email: "mgc@nutrauhealth.com"
+ keybase: "michelc"
+ telegram: "cryptomgc"
+ bmc: "michel47"
+ zoom: "3056498482"
+ _title: Coding Artist, Machine Wisperer, Technology traveler
+ title: Site Creator, Graphics Designer, System Engineer, Technology Adviser
+ photo: mik-helmet.jpg
+ vcard-url: "https://www.linkedin.com/in/michel-combes/"
+ website-url: "https://gc-bank.org/"
+ keybase-url: "https://keybase.io/michelc"
+ orcid-url: https://orcid.org/0000-0001-7395-3353
+ github-url: https://github.com/michel47
+# gitlab-url: https://gitlab.com/michel47
+ linkedin-url: https://www.linkedin.com/in/michel-combes/
+ bio:
+  header: Biography
+  content: |-
+   Michel Combes, Ph.D, founder of [GC-Bank][1]
+
+   - Created and deployed this web site. 
+   - Developed cryptocurrencies and ledger technologies; architect blockRings™ for Data Commons Systems; participatory token for collective; launched CERES platform as a transformative economy experiment; issued the first cryptomorphic currency LVC for a Festival in Miami; setup GC-bank portfolio and associated coin forge for minted currencies; developed non-proof of work blockchains; invented smart litigation and proof of witness for solution to double spending, and proof of membership for authentication, developed non-consensus based ledger as byzantine resistant system; developed system robust to Sybil attack for identity management. 
+   - Developed light weight smart glasses; deploy production validation and characterization flow on manufacture line; build and Reamp up volume for Vaunt smart glasses;
+   - Designed MEMs electronic control and drive algorythm. Developed picoprojector, wearable, Head up Displays; architect mems based picoprojector plateform, lead prototyping team; supervise Design and Manufacture of Headup displays, companion projectors and monochrome holographic glasses; lead the Engineegimg Team responsible for design of company chipset.
+   - Developed laser drivers, reference design, video processor; build reference designs for pico-projector, prepared CES demos ( worked with major customers in the field Syndiant, Micron, LGE, MVIS, Bosh, bTendo ); defined ARM based video processor architecture for MEMs scanner display systems, geometric correction, mixed signal servoing of laser beams, temperature and power management, white balance contolled loops; published datasheet and supporting documentations for products release; designed drivers for native / direct green lasers (Nishia, Soraa, OSRAM).
+   - by the way I used [vi][4] and [nroff][5] to write my Ph.D. disseration&nbsp;!
+   - ... [*read more*][2]
+   - [![BMC](https://cdn.buymeacoffee.com/buttons/v2/default-green.png)](https://www.buymeacoffee.com/michel47)
+ 
+   my pgp key: [FAD0F1559C15C16D1C82D8F0 1092 2EF0 40B0 11EF][6]
+   ```sh
+   curl https://keybase.io/michelc/pgp_keys.asc | gpg --import
+   ```
+   
+   [1]: https://gc-bank.org
+   [2]: https://mcombes.resumesm.gq/
+   [3]: https://www.buymeacoffee.com/michel47
+   [4]: https://duckduckgo.com/?q=!+vi
+   [5]: https://duckduckgo.com/?q=!+nroff
+   [6]: https://keybase.io/michelc/pgp_keys.asc
+  
+ publi:
+    header: Some Publications &amp; <a href=https://patents.google.com/?inventor=Michel+Combes>Patents</a>
+    list:
+     - author: Abele N, et al.
+       patnum: US20190041644A1
+       patref: "US&nbsp;2019/0041644&nbsp;A1"
+       authors: Nicolas Abele, Michel Olivieri, Gerard McGlew, Michel Combes
+       title: "Methods and apparatus to identify lenses of head-wearable apparatus."
+       url: https://patents.google.com/patent/US20190041644A1/en?inventor=Michel+Combes
+       assignee: "[North Inc.](https://blog.google/products/hardware/focus-helpful-devices-google-acquires-north)"
+       publisher-ref: United States Patent and Trademark Office -- Fev. 2, 2019
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20190041644
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US20190041644A1.pdf
+       access: open
+       display: none
+
+     -
+       author: Kilcher L, et al.
+       patnum: US10067344B2
+       patref: "US&nbsp;10,067,344&nbsp;B2"
+       authors: Lucio Kilcher, Nicolas Abele, Patrick Gerard McGlew, Michel Combes
+       title: "Variable transmissivity virtual image projection system."
+       url: https://patents.google.com/patent/US10067344B2/en?inventor=Michel+Combes
+       assignee: Intel Corp.
+       publisher-ref: United States Patent and Trademark Office -- Sep. 4, 2018
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=10067344
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US10067344B2.pdf
+       access: open
+     - 
+       author: Abele N, et al.
+       patnum: US9826203B2 
+       patref: "US&nbsp;9,826,203&nbsp;B2"
+       authors: Nicolas Abele, Michel Combes
+       title: "Method and system for controlling a laser-based lighting system."
+       url: https://patents.google.com/patent/US9826203B2/en?inventor=Michel+Combes
+       assignee: Intel Corp.
+       publisher-ref: United States Patent and Trademark Office -- Nov. 21, 2017
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=9826203
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US9826203B2.pdf
+       access: open
+       display: none
+
+     - author: Novotny V, et al.
+       patnum: "US8810886B2"
+       patref: "US&nbsp;8,810,886 B2"
+       authors: Vlad Novotny, Gabriel Matus, Michel Combes
+       title: "Method for reducing speckle pattern in display images."
+       url: https://patents.google.com/patent/US8810886B2/en?inventor=Michel+Combes
+       assignee: Himax Display USA Inc.
+       publisher-ref: United States Patent and Trademark Office -- Aug. 19, 2014         
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=8810886
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US8810886B2.pdf
+       access: open
+
+     - author: Combes MG
+       patnum: US20130016285A1
+       patref: "US&nbsp;2013/0016285&nbsp;A1"
+       authors: Michel Combes
+       title: "Light emitting element driver ic implementing gamma expansion."
+       url: https://patents.google.com/patent/US20130016285A1/en?inventor=Michel+Combes
+       assignee: Intersil Americas LLC.
+       publisher-ref: United States Patent and Trademark Office -- Jan. 17, 2013         
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20130016285
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US20130016285A1.pdf
+       access: open
+
+     - author: Patel S, et al.
+       patnum: US7751114B2
+       patref: "US&nbsp;7,751,114&nbsp;B2"
+       authors: Satyadev Patel, James Dunphy, Peter Richards, Michel Combes
+       title: "System and apparatus for repairing micromirrors in spatial light modulators."
+       url: https://patents.google.com/patent/US7751114B2/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- Jul. 6, 2010
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=7751114
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US7751114B2.pdf
+       access: open
+
+     - author: Combes MG, et al.
+       authors: Michel G. Combes
+       patnum: US20090066719A1
+       patref: "US&nbsp;2009/0066719&nbsp;A1"
+       title: "Image dithering based on farey fractions"
+       url: https://patents.google.com/patent/US20090066719A1/en?inventor=Michel+Combes
+       assignee: Himax Display USA Inc.
+       publisher-ref: United States Patent and Trademark Office -- Mar. 12, 2009
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20090066719
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US20090066719A1.pdf
+       access: open
+ 
+     - author: Patel S, et al.
+       patnum: US20080218842A1
+       authors: Satyadev Patel, James Dumphy, Peter Richards, Michel Combes
+       patref: "US&nbsp;2008/0218842&nbsp;A1"
+       title: "Method of Repairing Micromirrors in Spatial Light Modulators"
+       url: https://patents.google.com/patent/US20080218842A1/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- Sep. 11, 2008
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20080218842
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US20080218842A1.pdf
+       access: open
+       display: none
+
+     - author: Richards P, et al.
+       patnum: US7215458B2
+       patref: "US&nbsp;7,215,458&nbsp;B2"
+       authors: Peter Richards, Satyadev Patel, Andrew G. Huibers, Michel Combes
+       title: "Deflection mechanisms in micromirror devices"
+       url: https://patents.google.com/patent/US7215458B2/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- May 8, 2007
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=7215458
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US7215458B2.pdf
+       access: open
+     -
+       author: Richards P, et al.
+       patnum: US7212359B2
+       patref: "US&nbsp;7.212,359&nbsp;B2"
+       authors: Peter Richards, Andrew G. Huibers, Michel Combes
+       title: "Color rendering of illumination light in display systems."
+       url: https://patents.google.com/patent/US7212359B2/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- May 1, 2007
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=7212359
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US7212359B2.pdf
+       access: open
+       display: none
+
+     - author: Grasser R, et al.
+       patnum: US20060250587A1
+       authors: Regis Grasser, Andrew Huibers, Michel Combes
+       patref: "US20060250587&nbsp;A1"
+       title: "Image projection method and projection system."
+       url: https://patents.google.com/patent/US20060250587A1/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- Nov. 9, 2006
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20060250587
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US20060250587A1.pdf
+       access: open
+
+     -
+       author: Richards P, et al.
+       patnum: US7131762B2
+       patref: "US&nbsp;7.131,762&nbsp;B2"
+       authors: Peter Richards, Andrew Huibers, Michel Combes
+       title: "Color rendering of illumination light in display systems."
+       url: https://patents.google.com/patent/US7131762B2/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- Nov. 7, 2006
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=7131762
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US7131762B2.pdf
+       access: open
+
+     - 
+       author: Richards P, et al.
+       patnum: US20050195137A1
+       patref: "US&nbsp;2005/0195.137&nbsp;A1"
+       authors: Peter Richards, Michel Combes 
+       title: "Sequential color modulation method in display systems"
+       url: https://patents.google.com/patent/US20050195137A1/en?inventor=Michel+Combes
+       assignee: Reflectivity Inc.
+       publisher-ref: United States Patent and Trademark Office -- Sep. 8, 2005
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20050195137
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US9826203B2.pdf
+       access: open
+
+     -
+       author: Feygin G, et al.
+       patnum: US6212664B1
+       patref: "US&nbsp;6,212,664&nbsp;B1"
+       authors: Gennady Feygin, Robert B. Staszewski, Michel Combes
+       title: "Method and system for estimating an input data sequence based on an output data sequence and hard disk drive incorporating same"
+       url: https://patents.google.com/patent/US6212664B1/en?inventor=Michel+Combes
+       assignee: Texas Instruments Inc.
+       publisher-ref: United States Patent and Trademark Office -- Apr. 3, 2001
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=6212664
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US6212664B1.pdf
+       access: open
+
+     - author: Marbot R, et al.
+       patnum: US5327031A
+       patref: "US&nbsp;5,327,031&nbsp;A"
+       authors: Roland Marbot, Andrew Cofler, Michel Combes, Jean-Claude Lebihan, Reza Nezamzadeh-Moosavi
+       title: "Variable-delay circuit."
+       url: https://patents.google.com/patent/US5327031A/en?q=Bull&inventor=Michel+Combes
+       assignee: BULL S.A.
+       publisher-ref: United States Patent and Trademark Office -- Jul. 5, 1994
+       publisher-url: https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=5327031
+       cite-as: '$author$, $assignee$ "[$title$]($url$)" $patref$; [$publisher-ref$]($publisher-url$)'
+       pdf-url: https://k2k4r8kwa3lx8i7699w37zttgen3ke0konqqqlusmirg4iv6fqfl6vrs.ipns.dweb.link/US5327031A.pdf
+       access: open
+       
+     -
+       author: Combes MG, et al.
+       authors: Combes, Michel, Karim Dioury, and Alain Greiner
+       title: "A portable clock multiplier generator using digital CMOS standard cells."
+       url: https://www.researchgate.net/profile/Michel_Combes/publication/2977248_A_portable_clock_multiplier_generator_using_digital_CMOS_standard_cells/links/5a25cc854585155dd421593b/A-portable-clock-multiplier-generator-using-digital-CMOS-standard-cells.pdf
+       publisher-ref: "IEEE Journal of Solid-State Circuits 31.7 (1996): 958-965."
+       cite-as: '$author$, "[$title$]($url$)" [$publisher-ref$]($publisher-url$)'
+       publisher-url: https://ieeexplore.ieee.org/abstract/document/508209/
+       doi: 10.1109/4.508209
+       pdf-url: https://gateway.ipfs.io/ipfs/Qma5zo658yzhbDr2kVk3UsY3d958S4SQ8tDgBpUTqC8A86/A-portable-clock-multiplier-generator-using-digital-CMOS-standard-cells.pdf
+       MLA: |-
+        Combes, Michel, Karim Dioury, and Alain Greiner. "A portable clock multiplier generator using digital CMOS standard cells." IEEE Journal of Solid-State Circuits 31.7 (1996): 958-965.
+       access: open
+   
+
+colleen:
+  order: '02'
+  name: "Dr. Colleen F. Draper"
+  phone: "+41798668255"
+  email: "cfd@nutrauhealth.com"
+  sms: "+41798668255"
+  im: "+41798668255"
+  jitsi: "NutraU"
+  facetime: "+41798668255"
+  title: Founder, Consultant, Entrepreneur
+  photo: col-w-nux-logo.jpg
+  orcid-url: https://orcid.org/0000-0003-1384-4141
+  gitlab-url: https://gitlab.com/dr.col
+  linkedin-url: https://www.linkedin.com/in/colleenfogartydraper/
+  bio:
+   header: Biography
+   content: |-
+    Colleen Fogarty Draper MS, RD, PhD has founded and co-created NutraU Health with over 25 years of experience in scientific research, molecular/ personalized nutrition and genomics, clinical dietetics/medical nutrition therapy and product /program and business development and a strong network of collaborators.
+
+    Colleen has spent the last 8+ years at Nestle in molecular nutrition and systems biology research and translation sciences while simultaneously completing her PhD. Her doctoral work focused on
+    [metabolomic response signatures in nutrition and health, sexual dimorphism and hormone chronobiology][1].
+    She conducted further translation work in microbiome resilience, probiotic, prebiotic therapies and the connection with neurotransmitter functioning; dermatological sciences, fertility and personalized nutrition; sub-clinical mastitis and inflammatory diet intake; and led digital health technology development for diet intake, analysis and recommendation personalization. Additionally, Colleen spent several years conducting genetic association studies and developing personalized gene tests for pharmacogenomics and nutrition in the areas of inflammation, cardiovascular disease, diabetes, weight management and micronutrient requirements. In her early research years, she managed oncology clinical trials in compliance with the ICH GCPs and audited Institutional Review Boards to ensure compliance with the protections of human subjects.  Colleen has recently joined the SanGiovanni Laboratory as the Assistant Director of the Integrative Omics Brand at the Center for the Study of Nutrient-Responsive Systems.
+
+    Colleen pursued 1 year of dermatological science training to understand skin biology as a nutrient response system. Currently, she is merging this learning experience with her molecular nutrition background to investigate non-invasive systems nutrition biomarker sensing using microfluidics, microneedle technologies, and integrative -omics for translation into health care practice and consumer care. Colleen is interested in applying this to women’s hormonal health and immune-inflammatory precision nutrition.
+
+    Colleen’s recent product development experience includes designing nutrition and probiotic supplementation and scientific personalization strategies (genomics, microbiome) for a luxury women’s nutrition and skin care brand, as well as, the Proactive acne brand with Nestle Skin Health. Acting as a Principal Nutrition Scientist for Cereal Partners Worldwide (CPW), Colleen led the development and execution of health and nutrition science innovation with Nestle and General Mills. During this time she led the first EFSA health claim submission, and rolled out the CPW gut health strategy. She worked on probiotics and prebiotics claims substantiation supporting the GOODBELLY brand and identified ingredients to reduce postprandial glycemia for the women’s FITNESS brand. She also brought her scientific skills and technology development recommendations to the weight wellness consumer intensive immersion program.
+
+    She earned her PhD in life sciences with the Center for Analytical Biosciences, Leiden Academic Centre for Drug Research at Leiden University, The Netherlands; her Master’s of Science degree from Tufts University, School of Nutrition; and completed her dietetics program to become a registered dietitian at the Frances Stern Nutrition Center, New England Medical Center Hospital, Tufts University.
+
+    [1]: https://www.universiteitleiden.nl/en/research/research-output/science/metabolic-signatures-in-nutrition-and-health-short-term-diet-response-sexual-dimorphism-and-hormone-chronobiology
+ 
+  publi:
+    header: Selected Publications
+    list:
+     -
+       author: Draper CF
+       authors: 
+       title: "Metabolic signatures in nutrition and health: Short-term diet response, sexual dimorphism and hormone chronobiology"
+       url: https://openaccess.leidenuniv.nl/bitstream/handle/1887/68234/01.pdf?sequence=6
+       publisher-ref: Leiden University. 2018 Dec.
+       cite-as: '$author$, "[$title$]($url$)" [thesis]($publisher-url$), $publisher-ref$'
+       publisher-url: https://www.universiteitleiden.nl/en/research/research-output/science/metabolic-signatures-in-nutrition-and-health-short-term-diet-response-sexual-dimorphism-and-hormone-chronobiology
+       pdf-url: https://openaccess.leidenuniv.nl/bitstream/handle/1887/68234/PhD_thesis_20_Nov2018.pdf?sequence=3
+       access: open
+     -
+       author: Draper CF, et al.
+       authors: Draper CF, Duisters K, Weger B, Chakrabarti A, Harms AC, Brennan L, Hankemeier T, Goulet L, Konz T, Martin FP, Moco S, van der Greef J
+       title: "Menstrual cycle rhythmicity: metabolic patterns in healthy women"
+       cite-as: '$author$, "[$title$]($url$)" thesis, $publisher-ref$'
+       url: https://www.nature.com/articles/s41598-018-32647-0
+       publisher-ref: 'Scientific Reports. 2018 Oct&nbsp;1;8(1): 14568.'
+       doi: 10.1038/s41598-018-32647-0
+     -
+       author: Draper CF, et al.
+       authors: Colleen Fogarty Draper, Giulia Tini, Irene Vassallo, Jean Philippe Godin, MingMing Su, Wei Jia, Maurice Beaumont, Sofia Moco, Francois-Pierre Martin 
+       title: 'Vegan and animal meal composition and timing influence glucose and lipid related postprandial metabolic profile'
+       url: https://pubmed.ncbi.nlm.nih.gov/30724465/
+       publisher-ref: "Mol Nutr Food Res. 2019 Mar;63(5): e1800568"
+       doi: 10.1002/mnfr.201800568
+       pdf-url: http://gen.lib.rus.ec/scimag/?q=10.1002/mnfr.201800568
+     -
+       author: Wei R, et al.
+       authors: Runmin Wei, Alastair B. Ross, MingMing Su, Jingye Wang, Seu-Ping Guiraud, Colleen Fogarty Draper, Maurice Beaumont, Wei Jia,*, Francois-Pierre Martin 
+       title: 'Meat and vegetable intake produces amino acid and bile acid microbial related metabotypes in healthy people'
+       url: https://pubmed.ncbi.nlm.nih.gov/30098305/
+       publisher-ref: "Mol Nutr Food Res. 2018."
+       doi: 10.1002/mnfr.201800583
+     -
+       author: Draper CF, et al.
+       authors: Draper CF, Vassallo I, Di Cara A, Milone C, Comminetti O, Monnard I, Godin JP, Scherer M, Su M, Jia W, Guiraud SP, Praplan F, Guignard L, Ammon Zufferey C, Shevlyakova M, Emami N, Moco S, Beaumont M, Kaput J, Martin FP 
+       title: 'A 48-hour vegan diet challenge in healthy women and men induces a BRANCH-chain amino acid related, health associated, metabolic signature'
+       url: https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201700703
+       publisher-ref: Mol Nutr Food Res. 2018 Feb;62(3). Epub 2017 Dec 28.
+       doi: 10.1002/mnfr.201700703
+     -
+       author: Draper CF, et al.
+       authors: Draper CF, Curran AM, Scott-Boyer MP, Valsesia A, Roche HM, Ryan MF, Gibney MJ, Kutmon M, Evelo CT, Coort SL, Astrup A, Saris WH, Brennan L, Kaput J 
+       title: Sexual dimorphism, age, and fat mass are key phenotypic drivers of proteomic signatures
+       url: https://pubmed.ncbi.nlm.nih.gov/28950061/
+       publisher-ref: J Proteome Res. 2017 Nov 3;16(11):4122-4133.
+       doi: 10.1021/acs.jproteome.7b00501
+       doi-url: https://pubs.acs.org/doi/abs/10.1021/acs.jproteome.7b00501
+       pdf-url: http://gen.lib.rus.ec/scimag/?q=10.1021/acs.jproteome.7b00501>⭳</a>
+     -
+       author: Mathias MG, et al.
+       authors: Mathias MG, de Almeida Coelho-Landell C, Scott-Boyer MP2, Lacroix S, Morine MJ, Salomão RG, Toffano RBD, Ribeiro do Vale Almada MO, Camarneiro JM, Hillesheim 1, de Barros TT, Camelo-Junior J1, Giménez EC, Meisser K, Goyon A, Bertschy E, Lévêques 4, Oberson JM, Giménez C, Carayol J, Kussmann M, Descombes P, Métairon 5, Draper CF, Conus N, Mottaz SC, Corsini GZ, Myoshi SKB, Muniz MM, Hernandes LC, Venancio VP, Anutunes LMG, da Silva RQ, Laruito TF, Rossi IR, Ricci R, Re Jorge J, Faga ML, Quinhoneiro DCG, Reche MC, Silva PVSS, Falquetti LL, da Cunha THA, Deminice TMM, Tambellini TH, de Souza GCA, de Oliveira MM, Nogueira-Pileggi V, Matsumoto MT,    Priami C, Kaput J, Monteiro JP
+       url: https://onlinelibrary.wiley.com/doi/epdf/10.1002/mnfr.201700613
+       title: "Clinical & Vitamin Response to a Short-Term Multi- Micronutrient Intervention in Brazilian Children & Teens: From Population Data to Inter-Individual Responses"
+       publisher-ref: Mol Nutr Food Res. 2018 Jan 24.
+       doi: 10.1002/mnfr.201700613
+       pdf-url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6120145/pdf/MNFR-62-na.pdf
+       downl-url: http://gen.lib.rus.ec/scimag/?q=10.1002/mnfr.201700613
+       access: open
+
+     -
+       author: Moco S, et al.
+       authors: Moco S, Candela M, Chuang E, Draper C, et al. <!-- TODO -->
+       url: https://pubmed.ncbi.nlm.nih.gov/25029616/
+       title: Systems biology approaches for inflammatory bowel disease emphasis on gut microbial metabolism
+       publisher-ref: "Inflammatory Bowel Disorders.2014;0:1-11."
+       doi: 10.1097/MIB.0000000000000116
+     -
+       author: Draper CF
+       authors: Draper CF <!-- TODO -->
+       editor: Editor – Lynnette Ferguson
+       url: https://books.google.ch/books?id=sXU0AAAAQBAJ&pg=PA347&v=snippet&q=colleen
+       title: "Nutritional Genomics in Practice: Interaction with Health Professionals in Bringing Nutritional Genomics to the Public"
+       book-title: Nutrigenomics and nutrigenetics in functional foods and personalized nutrition
+       book-url: https://books.google.com/books?q=%2BISBN:9781439876800
+       cite-as: |-
+        "[$title$]($url$)".
+        [$book-title$]($publisher-url$) ($editor$). Chapter 18. p347. 2013.
+       publisher-ref: "Nutrigenomics and nutrigenetics in functional foods and personalized nutrition (Editor – Lynnette Ferguson). Chapter 18. p347. 2013."
+       publisher-url: https://www.ncbi.nlm.nih.gov/nlmcatalog?cmd=PureSearch&term=101602719%5Bnlmid%5D
+       ISBN: 9781439876800
+   
+     -
+       author: Mullin GE, et al.
+       authors: Mullin, Gerard E; Draper, Colleen Fogarty; Munsell, Melissa A
+       editor: Editor - Kohlstadt, Ingrid
+       url: https://books.google.com/books?id=KhPSBQAAQBAJ&q=Colleen
+       book-url: https://books.google.com/books?q=%2BISBN:9781439887721
+       title: "Inflammatory Bowel Disease"
+       cite-as: |-
+         "[Inflammatory Bowel Disease][1]".
+         [Advancing Medicine with Food and Nutrients][2]
+         (Editor - Kohlstadt, Ingrid) Chapter 15. 279-304. 2013.
+        
+         [1]: $url$
+         [2]: $publisher-url$
+       publisher-url: https://www.routledge.com/Advancing-Medicine-with-Food-and-Nutrients/Kohlstadt/p/book/9781439887721
+       publisher-ref: Advancing Medicine with Food and Nutrients (Editor Kohlstadt, Ingrid) Chapter 15. 279-304. 2013.
+       ISBN: 9781439887721
+     -
+       author: DeBusk R, et al.
+       authors: DeBusk R, Fogarty C, Kornman K, Ordovas J
+       url: https://pubmed.ncbi.nlm.nih.gov/15800562/
+       title: "Nutritional genomics: where do we begin?"
+       publisher-url: https://linkinghub.elsevier.com/retrieve/pii/S0002822305000039
+       publisher-ref: "Journal of the American Dietetic Association 2005; 105(4):589-598."
+       doi: 10.1016/j.jada.2005.01.002
+

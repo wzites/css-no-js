@@ -13,7 +13,8 @@ hero:
 
 preview-img: img/i-imagine.svg
 teaser-img: img/i-imagine.svg
- 
+featured: sitemap 
+
 ---
 {% assign baseurl = site.baseurl | default: '/' | replace_first: '/', page.base %}
 <!-- baseurl: {{baseurl}} -->

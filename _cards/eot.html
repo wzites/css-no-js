@@ -1,7 +1,7 @@
 ---
 cardname: "Eco-Organic Tech."
 title: Eco Organic Technology
-desc: "We build eco organic systems..."
+desc: "The same services without the footprints"
 slug: eco-organic-technology
 icon: eo
 order: '04'
@@ -17,7 +17,50 @@ layout: page
 <style>
 img { max-width: 30%; }
 </style>
-<code>
+
+
+<h3>Eco-Organic Technology</h3>
+
+We build eco organic systems... however we optimized our solution to minimized its ecologic footprint,
+
+<li> compiled once deployed multiple times
+<li> downloaded once locally reusable
+<li> store in memory as opposed to recomputed each time
+<li> serverless
+<li> mobile first
+<li> off-line first
+<li> low bandwidth
+<li> deduplicated
+<li> preferably powered w/ green 
+<li> reduced operation hours still preserving availability.
+
+<h4>The eco part,</h4>
+It is also avoiding big datacenter farms and prefering a peer-to-peer local approach,
+minimizing "allways on" equipments for transferring the data arround the globe.
+
+This is why all our website are static, i.e. compiled once and shipped in a cache friendly manner.
+when ever it is possible we like hostless solution (via IPFS) such that file are local to our member
+We also avoid bulky site, by choosing HML5 + CSS3 before using javascript.
+
+<h4>The organic part,</h4>
+As far as the organic aspect we are promoting technology in harmony w/i life, i.e. we include all living forms in the equation.
+We believe entropy source are the only way to made ethical technology sensitive to live matters, any therefore
+we don't have any robots without a discloded intention and a  trully random seed, making them organic
+(read more about "<a href="{{baseurl}}{% post_url 2021-02-25-organic-technology %}">organic technology</a>")
+
+All echanges and transactions on our network originated from an addressable living source, not some synthetic bots, so we always
+preserve the "initial" intent within our processing.
+
+Every seeds in our softwares are extracted from trully random entropy source such that we can carry the intent of its creator.
+
+This is making our technolgy unique in a sense that it inherently embeded the conscious intelligence of humanity.
+
+
+
+
+
+<br>
+<code style="display:none;">
 config: {{site.data.config | truncate: 1024,'...'}}
 <pre>
 collection: {{page.collection}}
@@ -37,11 +80,10 @@ tags: {{page.tags}}
 </pre>
 </code>
 
-<p>
-{% assign p = [] %}
-{% assign p.content = 'bla' %}
+<p style="display:none">
 <code>
-{{ p['content'] | jsonify | replace: '<','&lt;' | replace: '\\n',"\n" | truncate: 1024 }}
+{{ page['content'] | jsonify | replace: '<','&lt;' | replace: '\\n',"\n" | truncate: 1024 }}
 </code>
+</p>
 
 

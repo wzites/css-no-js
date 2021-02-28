@@ -17,7 +17,38 @@ layout: page
 <style>
 img { max-width: 30%; }
 </style>
-<pre><code>
+
+{% capture md %}
+We developped a blockchain architecture that is not wastefull, it's called [blockRing™][1].
+
+
+if can be deploy in many field in the health industry for instance:
+
+read more 
+ 1. <https://www.selfq.ml/>
+ 2. sites about [blockRings][2]
+
+
+[1]: https://duckduckgo.com/?q=%22blockRing™%22+!g
+[2]: https://qwant.com/?q=How+does+a+%22BlockRing™%22+work+%3F+%26g
+[3]: https://ipms.ml/
+
+{% endcapture %}{{ md | markdownify }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre style="display:none"><code>
 config: {{config}}
 collection: {{page.collection}}
 categories: {{page.categories}}
@@ -31,11 +62,5 @@ page.id: {{page.id}}
 date: {{page.date}}
 tags: {{page.tags}}
 </code></pre>
-
-teaser: <img src="{{baseurl}}{{page.teaser}}">
-<br>preview: <img src="{{baseurl}}{{page.preview}}">
-<br>image: <img src="{{baseurl}}{{page.image}}">
-
-<p>
 
 

@@ -11,5 +11,11 @@ tagline: 'Your technology partner'
 heroimg: img/i-hero.jpg
 heroimg: https://via.placeholder.com/300/{{config.colors.primary}}/{{config.colors.secondary}}.png?text=Hero+300x300 alt=placeholder
 
+discord: "[encode]https://discord.gg/29BXQ3A4v9[clear]"
+telegram: "[encode]https://t.me/joinchat/ItH3N95i6PpkqKoP[clear]"
 
+linkedin_url: https://linkedin.com/in/michel-combes
+twitter_url: https://twitter.com/mgcombes
+facebook_url: https://facebook.com/mgc04
+gitlab_url: https://gitlab.com/michel47
 

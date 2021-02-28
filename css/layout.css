@@ -128,7 +128,7 @@ form > button {
 
 .list {
   display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	/* min-height: 320px; */
 	height: auto;
 	grid-gap: 1rem;

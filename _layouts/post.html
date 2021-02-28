@@ -1,0 +1,36 @@
+---
+layout: page
+---
+{%- if page.preview-img -%}
+{%- if page.preview-img contains '/ipfs/' -%}
+  {%- assign preview-img = page.preview-img | split: '/ipfs/' | last | prepend: 'https://cdn.statically.io/img/dweb.link/ipfs/' -%}
+{%- else -%}
+  {%- assign preview-img = page.preview-img -%}
+{%- endif -%}
+{%- endif -%}
+<p class="text-right"><small><i>published on {{ page.date | date_to_string }}</i></small></p>
+
+{%- if page.header -%}<h2>{{page.header}} &mdash; {{page.title}}</h2>
+{%- else -%}<h3>{{ page.title }}</h3>{%- endif -%}
+{%- if page.subtitle -%}<h4>{{page.subtitle}}</h4>{%- endif -%}
+{%- assign author_name = page.author.name | default: site.author-name | default: site.commiter-name | default: site.user-name -%}
+{%- assign author_url = author_name | replace: ' ','+' | prepend: 'https://google.com/search?q=' -%}
+<h5>by <i><a href="{{page.author.url | default: author_url}}" target=_new>{{ author_name }}</a></i>
+{% if page.author.bio %}<a href="bios.html#{{page.author.bio}}"><i class="far fa-user-circle"></i></a>{% endif %}
+{% if page.author.email %}<a href="mailto:{{page.author.email}}"><i class="far fa-envelope"></i></a>
+{% else %}<a href="mailto:{{site.data.bios[page.author.bio].email}}"><i class="far fa-envelope"></i></a>{% endif %}
+<a class="mx-2" href="{{site.data.bios[page.author.bio].linkedin-url}}"><i class="fab fa-linkedin"></i></a>
+</h5>
+
+{%- if page.preview-img -%}
+<img src="{{preview-img}}" alt={{page.slug}} style="max-width: 40%; float: right; padding: 0.8rem;">
+{%- endif %}
+<a name="{{page.slug}}" title="{{page.slug}}" style="float:right">&#x2693;</a>
+{{ content }}
+<p>read more articles :
+{% include base.liquid %}
+<a href="{{page.previous.url | replace_first: '/',base}}">&lt; {{page.previous.slug}}</a>
+| {{ page.slug }} | <a href="{{ page.next.url | replace_first: '/',base }}">{{page.next.slug}} &gt;</a>
+</p>
+<br clear=all>
+

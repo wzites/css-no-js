@@ -17,7 +17,15 @@ layout: page
 <style>
 img { max-width: 30%; }
 </style>
-<pre><code>
+<p>We do repear of any kind from computer to small home appliances.
+<p>
+You have equipments that stopped working,
+give us a call <a href="https://t.me/doctorit">+1 41 689 4880</a>
+or send us a note <a href="mailto:doctorit@drit.ml">doctorit@drit.ml</a>
+
+
+
+<pre style="display:none"><code>
 config: {{config}}
 collection: {{page.collection}}
 categories: {{page.categories}}
@@ -32,13 +40,10 @@ date: {{page.date}}
 tags: {{page.tags}}
 </code></pre>
 
-teaser: <img src="{{baseurl}}{{page.teaser}}">
-<br>preview: <img src="{{baseurl}}{{page.preview}}">
-<br>image: <img src="{{baseurl}}{{page.image}}">
-
-<p>
+<p>{%comment%}
 <code>
 {{page | jsonify | replace: '<','&lt;' | replace: '\n',"\n" }}
 </code>
+{%endcomment%}</p>
 
 

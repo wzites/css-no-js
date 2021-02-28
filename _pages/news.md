@@ -13,7 +13,7 @@ featured: health
 post: {{site.posts | jsonify | truncate: 78,'...' }}
 -->
 
-We are launching [Dr. I·T][1]
+We are launching [Dr. I·T][1] for making all your [repairs]({{baseurl}}{% post_url 2021-02-25-7Rs %}).
 
 
 [1]: http://duckduckgo.com/?q=%22Dr+I%C2%B7T%22+!g
@@ -32,13 +32,4 @@ We are launching [Dr. I·T][1]
 {% endfor %}
 <hr>
 
-{% for post in site.posts %}
-### {{post.slug | replace: '-',' ' | capitalize}}
-- url: [{{ post.url }}]({{post.url}})
-- slug: {{post.slug}}
-- title: {{ post.title }}
-
-{% endfor %}
-
-<hr>
-<pre>{{page | strip_html | normalize_whitespaces |strip_newlines | jsonify | truncate: 78,'...' }}</pre>
+<pre>{{page | strip_html | normalize_whitespaces |strip_newlines | truncate: 78,'...' }} %}</pre>

@@ -1,0 +1,97 @@
+---
+title: Biographies
+layout: page
+hero: |-
+ content: "We have seanoned engineers with a more than 25years of experience"
+---
+<h2>{{page.title}}</h2>
+<!-- Bios ... -->
+<section class="bio-section bg-light" id="bio">
+    <div class="lg-container">
+    {% for member in site.data.bios %}
+        {% assign mod = forloop.index | modulo:2 %}
+        <!-- {{member[0]}}'s bio; Row #{{forloop.index}} -->
+        {% if mod == 0 %}
+        <div id="{{member[0]}}" class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-4"><a href="#page-top" class="js-scrool-trigger">
+            <img class="bio-img img-fluid" src="assets/img/{{member[1].photo}}" alt="{{member[0]}}'s photo" title="{{member[1].name}}"/></a></div>
+            <div class="col-lg-8">
+                <div class="featured-text-left text-center h-100 offering">
+        {% else %}
+        <div id="{{member[0]}}" class="row justify-content-center no-gutters">
+            <div class="col-lg-4"><a href="#page-top" class="js-scrool-trigger">
+            <img class="bio-img img-fluid" src="assets/img/{{member[1].photo}}" alt="{{member[0]}}'s photo" /></a></div>
+            <div class="col-lg-8 order-lg-first">
+                <div class="featured-text-right text-center h-100 offering">
+        {% endif %}
+                    <div class="d-flex h-100">
+                    {% if mod == 0 %}
+                        <div class="bio-text w-100 my-auto text-left text-xl-justify">
+                        <h2 class="text-black-50 text-right">{{member[1].name}}, {{member[1].title}}
+                        {% if member[1].vcard-url %}
+                        <a class="mx-2" href="{{member[1].vcard-url}}"><i class="far fa-address-card"></i></a>
+                        {% else %}
+                        <a class="mx-2" href="{{member[1].linkedin-url}}"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member[1].keybase-url %}<a class="mx-2" href="{{member[1].keybase-url}}"><i class="fab fa-keybase"></i></a>{% endif %}
+                        {% if member[1].website-url %}<a class="mx-2" href="{{member[1].website-url}}"><i class="fas fa-external-link-alt"></i></a>{% endif %}</h2>
+                    {% else %}
+                        <div class="bio-text w-100 my-auto text-left text-xl-justify">
+                        <h2 class="text-black-50 text-right">{{member[1].name}}, {{member[1].title}}
+                        {% if member[1].address-card %}
+                        <a class="mx-2" href="{{member[1].address-card}}"><i class="far fa-address-card"></i></a>
+                        {% else %}
+                        <a class="mx-2" href="{{member[1].linkedin-url}}"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member[1].keybase-url %}<a class="mx-2" href="{{member[1].keybase-url}}"><i class="fab fa-keybase"></i></a>{% endif %}
+                        {% if member[1].website-url %}<a class="mx-2" href="{{member[1].website-url}}"><i class="fas fa-external-link-alt"></i></a>{% endif %}</h2>
+                    {% endif %}
+                            <h3 class="text-black-50">{{member[1].bio.header}}:</h3>
+                            <p class="mb-0 text-black">{{member[1].bio.content | markdownify }}</p>
+                            <h3 class="text-black-50">{{member[1].publi.header}} <a href=https://scholar.google.com/citations?user=C0sKAxAAAAAJ>:</a></h3>
+                            <ol>
+                            {% for pub in member[1].publi.list %}
+                             <li class="mb-0 text-black" style="display: '{pub.display}}';">
+                             {% if pub.cite-as %}
+                               {% assign citeas = pub.cite-as %}
+                               <!-- cite-as={{ citeas }} -->
+                               {% for pair in pub %}
+                                 {% assign var = pair[0] | prepend: '$' | append: '$' %}
+                                 {% assign citeas = citeas | replace: var, pair[1] %}
+                               {% endfor %}
+                               {{ citeas | replace: '.,', '.' | markdownify }}
+                             {% else %}
+                               <span title="{{pub.authors | replace: '<!-- TODO -->', '' }}.">{{pub.author}}</span>
+                               "<a href={{pub.url}}>{{pub.title}}</a>".
+                               {% if pub.publisher-url %}<a href={{pub.publisher-url}}>{{pub.publisher-ref}}</a>{% else %}
+                               {{pub.publisher-ref}}
+                               {% endif %}
+                            {% endif %}
+                            {% if pub.access == 'open' %}{% if pub.pdf-url %}<a href={{pub.pdf-url}}><i class="fa fa-download" aria-hidden="true"></i></a>{% endif %}{% endif %}
+                            <!--  curl -LH "Accept: text/bibliography; style=mla; locale=fr-FR" http://dx.doi.org/{{doi}} -->
+                            {% if pub.doi %} doi:<a href=https://dx.doi.org/{{pub.doi}}>{{pub.doi}}</a>{% endif %}
+                            {% if pub.ISBN %}
+                              ISBN:<a href=https://books.google.com/books?q=%2BISBN:{{pub.ISBN}}>{{pub.ISBN}}</a>
+                            {% endif %}
+                            {% if pub.book-url %}
+                              <a href={{pub.book-url}}><i class="fa fa-book" aria-hidden="true"></i></a>
+                            {% endif %}
+                            {% if pub.doi %}<a href=https://search.crossref.org/?q={{pub.doi}}><i class="fa fa-quote-left" aria-hidden="true"></i>cite</a>
+                            {% else %}{% unless pub.patnum %}<a href=https://search.crossref.org/?q={{pub.title|replace: ' ','+'}}><i class="fa fa-quote-left" aria-hidden="true"></i>cite</a>{% endunless %}
+                            {% endif %}
+                            </p>
+                            {% endfor %}
+                            </ol>
+                    {% if mod == 0 %}
+                            <hr class="d-none d-lg-block mb-0 ml-0" />
+                    {% else %}
+                            <hr class="d-none d-lg-block mb-0 mr-0" />
+                    {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</section>
